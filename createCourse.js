@@ -11,8 +11,8 @@ mongoose.connect(dbUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 
 // Data to be added
     data = {
-        course_id:'CS210',
-        name: 'Data Structures',
+        course_id:'SE371',
+        name: 'Web Engineering',
         numRegisteredStudents: 9,
         numPassedStudents: 8,
         activities: [
@@ -48,7 +48,10 @@ async function updateAccountsAndCourse() {
         console.log('Course added successfully');
 
         // Query all accounts
-        const accounts = await Account.find({});
+        // const accounts = await Account.find({});
+
+        const email = "219110250@psu.edu.sa";
+        const accounts = await Account.find({ email: email }); 
 
         // Array to hold IDs of students
         let studentIds = [];

@@ -1,7 +1,9 @@
 const Course = require('../model/course.model');
+const Account = require('../model/account.model');
 
 module.exports.getCourses = async (request, response) => {
-    const courses = await Course.find({});
+    const account = await Account.findById(request.user._id).populate({ path: 'courses' });
+    const courses = account.courses
     response.render('dashboard/coursesList', { courses })
 }
 
