@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>CARS</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Nov 17 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  <style>
+    /* Add fade-in animation for the "Who Are We" section */
+    .section.faq {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Add fade-in animation for the cards in the FAQ section */
+    .card.basic {
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+    }
+
+    /* Add slide-in animation for the "Features and Benefits" list */
+    .card.basic ul {
+      opacity: 0;
+      animation: slideIn 1s ease-in-out forwards;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center; /* Center horizontally /
+        align-items: center; / Center vertically /
+        height: 100vh; / Take full viewport height */
+        margin: 0;
+        padding: 0;
+    }
+
+    iframe {
+        display: block;
+        width: 560px;
+        height: 315px;
+        border: none;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="/" class="logo d-flex align-items-center">
+        <span class="d-none d-lg-block">CARS</span>
+      </a>
+    </div><!-- End Logo -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <div class="d-flex">
+          <a href="/account/login" class="btn btn-outline-primary"
+            style="margin-right: 10px; margin-left: 875px; background-color: #808080; color: white; border-color: #f17341;">Sign
+            In</a>
+        </div>
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+
+
+  <main id="main" class="main" style="margin-left: 10px;">
+
+    <body class="d-flex flex-column">
+      <!-- Your existing HTML content -->
+
+      <div class="pagetitle">
+        <h1 class="section faq">Who Are We</h1>
+      </div><!-- End Page Title -->
+
+      <section class="section faq">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card basic" style="text-align: justify;">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <div>
+                  <h4 style="text-align:center; color: #f17341;">We are PSU students</h4>
+                  <br>
+                  <div class="video-container" style="align-items: center; margin-left: auto; margin-right: auto;">
+                    <iframe src="https://www.youtube.com/embed/1Dp8En8BsaA?si=NwOsQKkCpZ8Yi_0n"
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                  </div>
+                  <br>
+                  <h6>Our Mission: Empowering Educational Excellence through Insightful Analytics
+                    <P></P>
+                    <p style="color: gray;"> At Course Analytics and Reporting System (CARS), we believe in the
+                      transformative power of education. Our mission is to empower educational institutions, educators,
+                      and learners by providing advanced, intuitive analytics and reporting tools. We are dedicated to
+                      enhancing the educational experience by unlocking the full potential of data-driven
+                      decision-making.</p>
+                  </h6>
+                  <h6>Our Story: Bridging the Gap between Data and Education
+                    <P></P>
+                    <p style="color: #808080;"> Founded by a team of passionate educators, data scientists, and
+                      technologists, CARS emerged from a shared vision to bridge the gap between data analytics and
+                      educational processes. We recognized the burgeoning need for more nuanced, comprehensive, and
+                      accessible data analysis in education. Our journey began with the idea of creating a system that
+                      not only simplifies data collection and analysis but also makes it meaningful and actionable for
+                      educators and administrators.</p>
+                  </h6>
+                  <h6>Our Solution: Cutting-Edge, User-Centric Analytics
+                    <P></P>
+                    <p style="color: gray;"> CARS is a comprehensive analytics and reporting system, designed
+                      specifically for the educational sector. Our platform integrates seamlessly with various
+                      educational tools and systems, providing real-time data insights and analytics. We focus on
+                      delivering a user-friendly experience, ensuring that our system is accessible to educators and
+                      administrators regardless of their technical expertise.</p>
+                  </h6>
+                  <h6>Our Mission: Empowering Educational Excellence through Insightful Analytics
+                    <P></P>
+                    <p style="color: gray;"> At Course Analytics and Reporting System (CARS), we believe in the
+                      transformative power of education. Our mission is to empower educational institutions, educators,
+                      and learners by providing advanced, intuitive analytics and reporting tools. We are dedicated to
+                      enhancing the educational experience by unlocking the full potential of data-driven
+                      decision-making.</p>
+                  </h6>
+                  <h6>Key Features of Our System:
+                    <P></P>
+                    <ul>
+                      <li style="padding-bottom: 1.5rem; color: gray;">
+                        <p style="font-weight: bold;">Real-Time Data Analysis:</p> Instantly process and analyze
+                        educational data to provide up-to-date insights.
+                      </li>
+                      <li style="padding-bottom: 1.5rem;color: gray;">
+                        <p style="font-weight: bold;">Customizable Reporting: </p> Tailor reports to meet the unique
+                        needs of different educational stakeholders.
+                      </li>
+                      <li style="padding-bottom: 1.5rem;color: gray;">
+                        <p style="font-weight: bold;">Predictive Analytics:</p> Utilize advanced algorithms to predict
+                        trends and student performance.
+                      </li>
+                      <li style="padding-bottom: 1.5rem;color: gray;">
+                        <p style="font-weight: bold;">User Engagement Tracking: </p> Monitor and analyze student
+                        engagement and learning patterns.
+                      </li>
+                    </ul>
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer" style="margin-left: 0;">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CARS</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="">CARS</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/chart.js/chart.umd.js"></script>
+  <script src="vendor/echarts/echarts.min.js"></script>
+  <script src="vendor/quill/quill.min.js"></script>
+  <script src="vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="vendor/tinymce/tinymce.min.js"></script>
+  <script src="vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
