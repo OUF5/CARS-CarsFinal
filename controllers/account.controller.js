@@ -31,7 +31,7 @@ module.exports.login = async (request, response) => {
 }
 
 
-module.exports.logout = (request, response, next) => {
+module.exports.logout = (request, response, next) => { //check this out @abdulmalik
     request.logout(function(err) {
     if (err) { return next(err); }
         response.redirect('/pages-login');

@@ -8,3 +8,4 @@ module.exports.isLoggedIn = (request, response, next) => {
     }
     next();
 }
+//check this out @abdulmalik

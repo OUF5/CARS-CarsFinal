@@ -13,8 +13,8 @@ router.route('/register')
 
 router.route('/login')
     .get(account.renderLogin)
-    .post(passport.authenticate('local', { failureRedirect: '/account/login' }), catchAsync(account.login))
+    .post(passport.authenticate('local', { failureRedirect: '/account/login' }), catchAsync(account.login)) //we have to comment the error @Abdulmalik
 
-router.get('/logout', account.logout)
+router.get('/logout', account.logout) //check this out @Abdulmalik
 
 module.exports = router;
