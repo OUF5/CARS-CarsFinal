@@ -104,6 +104,8 @@ app.get('', async (request, response) => {
 
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
     console.log('Started on port ' + PORT);
 });
+
+module.exports = {server, app};

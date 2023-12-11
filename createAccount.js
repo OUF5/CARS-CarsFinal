@@ -37,3 +37,5 @@ Run your script from the command line, passing the email, password, and role as 
 
 node createAccount.js email@example.com myPassword Role
 */
+
+module.exports = {createUser}
