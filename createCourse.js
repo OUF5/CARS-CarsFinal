@@ -50,11 +50,11 @@ async function updateAccountsAndCourse() {
         // Query all accounts
         // const accounts = await Account.find({});
 
-        const email = "219110250@psu.edu.sa";
+        const email = "219110250@psu.edu.sa"; //adding student to the course
         const accounts = await Account.find({ email: email }); 
 
         // Array to hold IDs of students
-        let studentIds = [];
+        let studentIds = []; //or this 
 
         // Update each account
         for (let account of accounts) {
